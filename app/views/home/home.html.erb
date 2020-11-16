@@ -1,0 +1,22 @@
+<div class="table-title">
+    <h1>Transacciones</h1>
+</div>
+<table class="table-fill">
+<thead class="table-header">
+    <tr>
+    <th>Mercado</th>
+    <th>Máxima transacción</th>
+    <th>Moneda de pago</th>
+    </tr>
+</thead>
+
+<tbody class="table-hover">
+    <% @markets.each do |market| %>
+        <tr class="table-row v2">
+        <td><%= market[:market_id] %></td>
+        <td><%= market[:max_transaction] %></td>
+        <td><%= market[:quote_currency] %></td>
+        </tr>
+    <% end %>
+    </tbody>
+</table>
