@@ -5,8 +5,6 @@
 * `touch .env`
 * `docker-compose build`
 * `docker-compose run --rm web bundle install`
-* `docker-compose run --rm web yarn install`
-* `docker-compose run --rm web rails db:create db:schema:load`
 * `docker-compose up -d`
 * Abrir `localhost:3000` en cualquier navegador
 
